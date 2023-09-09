@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Login/ Register</title>
+    <link rel="stylesheet" href="login.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Homemade+Apple&family=Manrope&family=Merriweather:wght@300&family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <h2 class="logo"> Food For Gardens </h2>
+
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+            <button class="btnLogin-popup">Login</button>
+
+        </nav>
+
+
+    </header>
+
+    <div class="fact">
+    <p>    Did you know... that there are over 20,000 species of edible plants in the world?</p>
+    </div>
+    <div class="wrapper">
+        <span class="icon-close"><ion-icon name="close-outline"></ion-icon>
+        </span>
+
+
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                    <input type="text" required>
+                    <label>Email</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="key"></ion-icon>
+                    </span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+
+                <div class="remember-forgot">
+                    <label for=""><input type="checkbox">
+                        Remember Me</label>
+                    <a href="#">Forgot Password?</a>
+
+                </div><button type="submit" class="btn"> Login</button>
+
+
+                <div class="login-register">
+                    <p> Don't have an account?
+                        <a href="#" class="register-link">
+                            Register
+                        </a>
+                    </p>
+                </div>
+            </form>
+
+        </div>
+
+        <div class="form-box register">
+            <h2>Register</h2>
+            <form action="#">
+
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </span>
+                    <input type="text" required>
+                    <label>Username</label>
+                </div>
+               
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                    <input type="text" required>
+                    <label>Email</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="key"></ion-icon>
+                    </span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+
+
+                <div class="remember-forgot">
+                    <label for=""><input type="checkbox">
+                        I agree to the Terms & Conditions</label>
+                    
+
+                </div><button type="submit" class="btn"> Register</button>
+
+
+                <div class="login-register">
+                    <p> Already have an account? 
+                        <a href="#/" class="login-link">
+                            Login
+                        </a>
+                    </p>
+                </div>
+            </form>
+
+        </div>
+
+     
+        
+
+    </div>
+    </div>
+
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+
+</html>

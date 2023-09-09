@@ -1,0 +1,79 @@
+*{ margin: 0;
+padding: 0;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+main{
+    background: linear-gradient(to right, #9c27b0, #aac2db);
+    position:relative;
+    overflow: hidden;
+
+}
+
+ .container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+ }
+
+ .calculator{
+    background: #e5e5e5;
+    padding: 20px 25px;
+    border: #6769a0 outset 15px;
+    box-shadow: 13px 13px 10px rgba(0, 0, 0, 0.494);
+
+    border-style: groove;
+    border-radius: 24px;
+    box-shadow: #333 30px;
+    
+ }
+
+ .calculator form input{
+    
+        border: 0;
+        outline: 0;
+        width: 60px;
+        height: 60px;
+        border-radius: 133px;
+        border: #6769a0f6 inset 10px;
+
+        box-shadow: -1px 1px 10px rgba(148, 148, 148, 0.494), -3px 6px 7px #0b2b4d8a;
+        /* background: #d8c6d78f; */
+        font-size: 1rem;
+        cursor: pointer;
+        color: #333;
+        margin: 2px;
+        text-align: center;
+
+ }
+
+ form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 0px 15px 0 ;
+
+
+ }
+
+ form .display input{
+    text-align: right;
+    flex: 1;
+    font-size: 2rem;
+    padding: 2px 20px;
+    box-shadow: none;
+    background-color: #d8b8cc;
+
+ }
+
+form > div  .equals{
+    width: 145px; 
+}
+
+form > div .operator{
+    color: #be4aaa;
+    font-weight: bold;
+}
