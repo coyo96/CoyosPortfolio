@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* 
+font-family: 'Dosis', sans-serif;
+font-family: 'Homemade Apple', cursive;
+font-family: 'Merriweather', serif;
+font-family: 'Nothing You Could Do', cursive;
+
+*/
+body {
+  height: 100vh;
+
+  background-color: rgb(0, 0, 0);
+  background-image: url("https://images.unsplash.com/photo-1604520024836-a8cde7f2610e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2574&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+.navbar--link {
+  width: 330px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.navbar--link:hover {
+  color: #ffffff;
+  background-color: rgba(234, 234, 104, 0.247);
+  text-align: center;
+  padding: 0.3rem;
+  width: 330px;
+  align-items: center;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  border-color: rgba(234, 234, 104, 0.596);
+}
+
+/*header*/
+
+header {
+  position: relative;
+  padding: 0 2rem;
+  height: 4.5rem;
+
+}
+
+.navbar {
+  width: 100%;
+  height: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+  top:.4rem;
+
+  justify-content: space-between;
+}
+
+.navbar .logo a {
+  font-size: 1.3rem;
+  color: #fff;
+  font-weight: bold;
+  font-family: "Merriweather", serif;
+  letter-spacing: 0.6px;
+  
+}
+
+.navbar .fa-xmark {
+  color: rgba(234, 234, 104, 0.596);
+}
+
+.navbar .logo a:hover {
+  font-size: 1.5rem;
+  color: #f1d88c;
+  transition: all 0.5s ease-in;
+  font-weight: bold;
+}
+
+.navbar .links {
+  display: flex;
+  gap: 2rem;
+  display: none;
+  font-family: "Nothing You Could Do", cursive;
+}
+
+.navbar .toggle_btn {
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.action_btn {
+  background-color: rgb(179, 85, 56);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 0.8 rem;
+  font-weight: bold;
+  position: relative;
+  cursor: pointer;
+  left: 5vh;
+}
+
+.action_btn:hover {
+  scale: 1.5;
+  color: #fff;
+  background-color: #98750b8b;
+  transition: .7s ease-in;
+  cursor: pointer;
+}
+
+.action_btn:active {
+  scale: 0.95;
+}
+
+.btn2 {
+  background-color: #eaea6898;
+  color: #fff;
+  padding: 0.3rem 8rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 0.8 rem;
+  cursor: pointer;
+  left: 90vh;
+}
+
+.btn2:hover {
+  scale: 1.13;
+  padding: 0.2rem 6rem;
+  transition: all 0.1s ease-out;
+  color: #fff;
+  filter: saturate(2);
+}
+
+.btn2:active {
+  scale: 0.95;
+}
+/* dropdown menu */
+
+.dropdown_menu {
+  /* display:none; */
+  position: absolute;
+
+  right: 1rem;
+  top: 60px;
+  width: 250px;
+  height: 0;
+  background: #d8ffe330;
+  backdrop-filter: blur(7px);
+  border-radius: 5px;
+  overflow: hidden;
+  transition: height 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open {
+  height: 240px;
+}
+.dropdown_menu li {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown_menu .action_btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+section#hero {
+  /* height: calc(100v-60px); */
+  height: 150vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  left: 300vh;
+}
+
+#hero h1 {
+  font-size: 2.3rem;
+  margin-bottom: 1rem;
+  -webkit-transform: rotate(0deg);
+  position: absolute;
+  top: 70vh;
+  left: 3rem;
+  font-family: "Homemade Apple", cursive;
+}
+
+#hero h2 {
+  text-transform: capitalize;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  -webkit-transform: rotate(0deg);
+  position: absolute;
+  top: 78vh;
+  left: 10rem;
+  font-family: "Merriweather", serif;
+  letter-spacing: 3px;
+}
+
+#hero p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+  -webkit-transform: rotate(0deg);
+  position: absolute;
+  top: 82vh;
+  left: 3rem;
+  width: 25rem;
+  text-align: left;
+  /* background-color: rgba(127, 255, 212, 0.185); */
+  /* padding: 10px;
+  border-radius: 10px; */
+  font-family: "Dosis", sans-serif;
+}
+
+/* responsive design */
+
+@media screen and (max-width: 992px) {
+  .navbar-links,
+  .navbar,
+  .action_btn {
+  }
+
+  .navbar .toggle_btn {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .dropdown_menu {
+    left: 2rem;
+    width: unset;
+  }
+}

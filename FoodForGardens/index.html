@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Responsive Navbar</title>
+
+  <script src="https://kit.fontawesome.com/a2fa07741d.js" crossorigin="anonymous"></script>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Homemade+Apple&family=Merriweather:wght@300&family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <header>
+    <div class="navbar">
+      <div class="logo"><a href="#">Food For Gardens</a></div>
+      <ul class="links">
+        <li><a href="https://coyo96.github.io/FoodForGardens/#">Home</a></li>
+      <li><a href="https://coyo96.github.io/FoodForGardens/FoodForGardens/about.html" class="navbar">Our Mission</a></li>
+      <li><a href="/#">Success Stories</a></li>
+      <li><a href="/#">Contribute</a></li>
+      <li><a href="/#" class="btn2">Getting Started</a></li>
+      </ul>
+
+
+      <div class="toggle_btn">
+        <a href="#" class="action_btn">Discover How</a>
+        <!-- <i class="fa-solid fa-bars"></i> -->
+
+
+      </div>
+    </div>
+
+    <div class="dropdown_menu links">
+      <li><a href="/FoodForGardens/index.html" class="navbar--link">Home</a></li>
+      <li><a href="/FoodForGardens/about.html" class="navbar--link">Our Mission</a></li>
+      <li><a href="/" class="navbar--link">Success Stories</a></li>
+      <li><a href="/index.html" class="navbar--link">Back to Portfolio</a></li>
+      <li><a href="" class="btn2">Getting Started</a></li>
+    </div>
+  </header>
+
+
+
+
+  <main>
+    <section id="hero">
+
+      <h1>infinite abundance</h1>
+      <h2>Right in your yard</h2>
+      <p>
+        Could the fight to feed ourselves end if we turned our clean-cut lawns turned into organic food forests?
+      </p>
+
+    </section>
+
+
+
+  </main>
+  <script>
+    const toggleBtn = document.querySelector('.toggle_btn')
+    const toggleBtnIcon = document.querySelector('.toggle_btn i')
+    const dropDownMenu = document.querySelector('.dropdown_menu')
+
+    toggleBtn.onclick = function () {
+      dropDownMenu.classList.toggle('open')
+      const isOpen = dropDownMenu.classList.contains('open')
+
+      toggleBtn.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa bars'
+
+    }
+  </script>
+
+
+</body>
+
+</html>

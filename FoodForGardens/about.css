@@ -1,0 +1,424 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    max-width: 100%;
+  }
+  
+  /* 
+  font-family: 'Dosis', sans-serif;
+  font-family: 'Homemade Apple', cursive;
+  font-family: 'Merriweather', serif;
+  font-family: 'Nothing You Could Do', cursive;
+  
+  */
+  body {
+    height: 100vh;
+  
+    background-color: rgb(249, 242, 228);
+    background-image: url('https://www.redrocksonline.com/wp-content/themes/redrocks-theme/dist/images/bg-textured-3_0b2a33ab.jpg') ;
+    background-blend-mode:multiply;
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+   
+  }
+
+  main{
+    padding: 3rem 1rem;
+     top: 4rem;
+ 
+     padding-bottom: 35rem;    
+   }
+  
+  li {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+  }
+  
+  a:hover {
+    color: #ffffff;
+  }
+  
+  .navbar--link {
+    width: 330px;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .navbar--link:hover {
+    color: #ffffff;
+    background-color: rgba(234, 234, 104, 0.247);
+    text-align: center;
+    padding: 0.3rem;
+    width: 330px;
+    align-items: center;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    border-color: rgba(234, 234, 104, 0.596);
+  }
+  
+  /*header*/
+  
+  header {
+    position: relative;
+    /* background-image:url('https://images.unsplash.com/photo-1611511449923-b179ddc69119?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2787&q=80'); */
+   background-image:url('https://images.unsplash.com/photo-1631981798865-e0216d05b443?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2787&q=80');
+   /* background-image:url('https://images.unsplash.com/photo-1462690417829-5b41247f6b0e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80'); */
+    padding: 0 2rem;
+    height: 4.5rem;
+  }
+  
+  .navbar {
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top:.4rem;
+    justify-content: space-between;
+  }
+  
+  .navbar .logo a {
+    font-size: 1.3rem;
+    color: #fff;
+    font-weight: bold;
+    font-family: "Merriweather", serif;
+    letter-spacing: 0.6px;
+    
+  }
+  
+  .navbar .fa-xmark {
+    color: rgba(234, 234, 104, 0.596);
+  }
+  
+  .navbar .logo a:hover {
+    font-size: 1.5rem;
+    color: #f1d88c;
+    transition: all 0.5s ease-in;
+    font-weight: bold;
+  }
+  
+  .navbar .links {
+    display: flex;
+    gap: 2rem;
+    display: none;
+    font-family: "Nothing You Could Do", cursive;
+  }
+  
+  .navbar .toggle_btn {
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .action_btn {
+    background-color: rgb(179, 85, 56);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8 rem;
+    font-weight: bold;
+    position: relative;
+    cursor: pointer;
+    left: 5vh;
+  }
+  
+  .action_btn:hover {
+    scale: 1.5;
+    color: #fff;
+    background-color: #98750b8b;
+    transition: .7s ease-in;
+    cursor: pointer;
+  }
+  
+  .action_btn:active {
+    scale: 0.95;
+  }
+  
+  .btn2 {
+    background-color: #eaea6898;
+    color: #fff;
+    padding: 0.3rem 6rem;
+    border: none;
+    outline: none;
+   
+    border-radius: 5px;
+    font-size: 0.8 rem;
+    cursor: pointer;
+    left: 90vh;
+  }
+  
+  .btn2:hover {
+    scale: 1.13;
+    padding: 0.2rem 6rem;
+    transition: all 0.1s ease-out;
+    color: #fff;
+    filter: saturate(2);
+  }
+  
+  .btn2:active {
+    scale: 0.95;
+  }
+  /* dropdown menu */
+  
+  .dropdown_menu {
+    /* display:none; */
+    position: absolute;
+    right: 1rem; 
+    top: 60px;
+    width: 250px;
+    height: 0;
+    background: rgba(91, 114, 61, 0.635);
+     backdrop-filter: blur(7px);
+    border-radius: 5px;
+    overflow: hidden;
+    transition: height 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+  }
+  
+  .dropdown_menu.open {
+    height: 240px;
+    
+  }
+  .dropdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .dropdown_menu .action_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  
+
+  .img1 img{
+    background-color: #333;
+    position: absolute;
+    width:50%;
+    max-width: 40rem;
+    left: 51%;
+    top: 6rem;
+    padding: auto;
+   z-index: -3;
+
+  }
+  .aboutus{
+    background: #ffffff;
+    padding: 2rem;
+    z-index: 3;
+    position:relative;
+    margin-top: 0rem;
+    /* border-radius: 3px; */
+    height: 24rem;
+    left:3vh;
+    width: 57%;
+    overflow: scroll;
+
+  }
+
+  .img2 img{
+    position: absolute;
+    top: 25rem; 
+  width: 30rem;
+    max-height: 40rem;
+    left: 10vh;
+    z-index: -3;
+
+
+  }
+
+
+ 
+  main h1{
+    font-family: 'Homemade Apple', cursive;
+    margin-bottom: -10px;
+    text-transform: capitalize;
+    text-align: left;
+    
+  }
+  
+  main p{
+    font-family: 'Dosis', sans-serif;
+   font-size: 1.3rem;
+  }
+
+  
+main blockquote{
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 1.6rem;
+    font-weight: bold;
+
+}
+.box2{
+    background-color: #fff;
+    z-index: 3;
+    position: relative;
+    top: 10rem;
+    width: 50rem;
+    left: 30rem;
+    padding:2rem;
+    height: auto;
+    overflow: scroll;
+    text-align: end;
+
+}
+
+
+  /* responsive design */
+  
+  /*footers*/
+
+
+
+
+footer{
+    position: relative;
+    width: 100%;
+    
+    text-align: right;
+}
+footer img{
+    position:relative;
+    top: -48px;
+    left: -1em;
+    
+
+}
+
+footer h2{
+    /* font-family: 'Merriweather', serif; */
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 1 rem;
+
+}
+
+.footer__container{
+    top:auto;
+    background-color:#fff;
+    padding: 4rem 0;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+.footer__links{
+    width:100%;
+    max-width: 1000px;
+    display:flex;
+    justify-content: center;
+}
+
+.footer__link--wrapper{
+    display:flex;
+}
+
+.footer__link--items{
+    display:flex;
+    flex-direction: column;
+    align-items:flex-start;
+    margin: 0px;
+    /* text-align:left; */
+   
+    width: 260px;
+    box-sizing: border-box;
+}
+
+.footer__link--items h2{
+    margin-bottom: 16px;
+    
+    
+}
+
+.footer__link--items >h2{
+    /* text-decoration: underline; */
+    border-bottom: solid #47684d 2px;
+    color: #47684d;
+}
+
+.footer__link--items a, footer a{
+    font-family: 'Merriweather', serif;
+    color:#0e5c74;
+    text-decoration: none;
+    font-size: .8rem;
+    margin-bottom: .5rem;
+    text-align: right;
+}
+
+.footer__link--items a:hover, footer a:hover{
+    
+    color:#f1d88c;
+    transition: 0.3s ease-out;
+
+}
+
+/*social icons*/
+
+.social__icons--link{
+    
+color:#27aba2;
+font-size: 24px;
+
+}
+
+.social__media{
+    max-width: 1000px;
+    width:100%
+
+}
+
+.social__media--wrap{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto 0 auto;
+}
+.social__icons{
+    display:flex;
+    justify-content: space-between;
+    width: 240px;
+    color: #333;
+    z-index: 3;
+}
+
+.social__logo {
+    color: #939422;
+    justify-self: flex-start;
+    margin-left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    display:flex;
+    align-items: center;
+    margin-bottom: 16px;
+
+
+}
+
+.website__rights{
+ 
+    color:#61aa88;
+}
+
+
