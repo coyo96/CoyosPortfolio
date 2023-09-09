@@ -45,11 +45,9 @@ label {
 }
 
 .thumb-list img{
-display: flex;
-justify-content: center;
-align-content: center;
+
    max-width: auto;
-    max-height: auto;
+  height: 10rem;
    background-color: transparent;
    margin: auto;
 }
@@ -85,10 +83,8 @@ input[type="radio"] {
 body {
     background-color: #fffbeb;
     position:relative;
-  
     align-items: center;
     background-image: url('https://images.unsplash.com/photo-1564873360898-9cd1a1169d19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1913&q=80');
-    
     background-size: cover;
     background-repeat: no-repeat;
   width: 100vh;
@@ -98,13 +94,14 @@ body {
 .container {
     background-color: #ffffff7a; 
     position: relative;
-    top: 30px;
+    top: 10px;
     left: 20vw;
- align-items: center;
+ 
   max-width: 50vw;
   padding: 20px 20px;
   margin: 0 auto;
-  border: 2px solid black;
+border-radius: 30px;
+  border: 2px outset rgba(93, 62, 30, 0.115);
 }
 
 /* SLIDESHOW
@@ -156,7 +153,7 @@ body {
 
 .featured-wrapper .dots {
   position: absolute;
-  bottom: 5px;
+  bottom: -24px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -193,6 +190,7 @@ body {
 
 .thumb-list img,
 .thumb-list .outer {
+    object-fit: contain;
   grid-column: 1;
   grid-row: 1;
 }
@@ -204,15 +202,17 @@ body {
 }
 
 .thumb-list .inner {
-  font-size: 19px;
+  font-size: 16px;
   opacity: 0;
   transform: translateY(20px);
   transition: all 0.25s;
   position: relative;
-  top: -120px;
-  padding: 10px 10px;
+  top: -85px;
+  padding: 3px 6px;
+    font-family: georgia;
+    text-align: center;
   border: outset 1px #4f4f4f;
-background-color: #efeec5;
+background-color: #ffffffb0;
 /* labels/*/
 }
 
