@@ -132,7 +132,7 @@ color: #59785f;
     font-weight: 500;
     background-color:#a3c591;
     border-radius:5px 20px;
-    padding: 10px 10px;
+    padding: 10px 30px;
     text-align: center;
     border: #0f616455 solid 3px;
     color: #549f1b;
@@ -154,7 +154,7 @@ color: #59785f;
 
 
 .home-img{
-    background-image:url('WebsiteFront/chris-lee-70l1tDAI6rM-unsplash.jpeg');
+    background-image:url('/WebsiteFront/chris-lee-70l1tDAI6rM-unsplash.jpeg');
     transform: scaleX(-1);
     transform: scaleY(1);
     background-size: cover;
@@ -243,7 +243,7 @@ span{
 }
 
 .about-img{
-    background-image:url('WebsiteFront/me.png');
+    background-image:url('/WebsiteFront/me.png');
     background-size: cover;
 width:  250%;
 height: 60vh;
