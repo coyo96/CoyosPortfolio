@@ -154,7 +154,7 @@ color: #59785f;
 
 
 .home-img{
-    background-image:url('/WebsiteFront/chris-lee-70l1tDAI6rM-unsplash.jpeg');
+    background-image:url('WebsiteFront/chris-lee-70l1tDAI6rM-unsplash.jpeg');
     transform: scaleX(-1);
     transform: scaleY(1);
     background-size: cover;
@@ -241,7 +241,7 @@ span{
 }
 
 .about-img{
-    background-image:url('/WebsiteFront/me.png');
+    background-image:url('WebsiteFront/me.png');
     background-size: cover;
 width:  250%;
 height: 60vh;
