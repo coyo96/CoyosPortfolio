@@ -1,101 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coyo's Directory</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Coyo's Portfolio Website</title>
+
+    <!--icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Homemade+Apple&family=Merriweather:wght@300&family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Homemade+Apple&family=Merriweather+Sans&family=Urbanist:wght@100;500&display=swap"
+        rel="stylesheet"> <!-- css  -->
+    <link rel="stylesheet" href="WebsiteFront/styles.css">
 
-    
 </head>
-<body class="total">
+
+<body>
+
+    <header class="header">
+        <a href="" class="logo"> Coyo's Portfolio</a>
+        <i class="bx bx-menu" id="menu-icon"></i>
+
+        <div class="navbar">
+            <a href="#home" class="nav-links active">home </a>
+            <a href="#about" class="nav-links">about </a>
+            <a href="#services" class="nav-links">services </a>
+            <a href="#portfolio" class="nav-links"> portfolio</a>
+            <a href="#contact" class="nav-links">contact </a>
+
+        </div>
+    </header>
+
+    <section class="home" id="home">
+      
+        <div class="home-content">
+
+            <h3>Hello, my name is</h3>
+            <h1>Coyo Lam</h1>
+            <h3>and I am a <span>Frontend Developer</span><i>!</i></h3>
+             <p>   Passionate about color, I aspire to use my abilities to create functional websites that create platforms
+                for education, integrity, and inspire greater purpose.
+            </p>
+
+                <div class="bar"></div>
+
+
+
+            <div class="buttons home-links-container">
+
+
+
+
+                <a href="https://www.linkedin.com/in/coyolam/" class="home-links">linkedin </a>
+                <a href="https://www.github.com/coyo96/" class="home-links">github </a>
+
+
+
+
+            </div>
+
+        </div> 
+        <div class="home-img">
+
+        </div>
+
+
+        <!-- <div class="social-media">
     
+</div> -->
+        </div>
+    </section>
+
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <!-- <img src="/WebsiteFront/me.png"> -->
+
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading"> About <span>Me</span> </h2>
+            <h3>Web Designer | Photoshop Aficionado | Full Stack Dev </h3><BR>
+            <p> My love for graphic design began at the age of 10. My mom's friend Mitch  gifted
+                me a CD-Rom of Photoshop one night after kung-fu class. This was a start of getting a copy every single year.
+                That and my Pumba & Simone keyboard-typing games pointed me toward a rabbit hole that would stay with me.
+
+                <!-- When Neopets came into my view, I was barely 9 ½  when I discovered that part of the internet, where Myspace and"+  " <3 :P <^_^>" + " became a thing?"; 
+                This was around the same time I discovered Neopets- and that someone had -->
+                added a simple textarea HTML code, with a message, ontop of their
+                feather-edged image of space. Function <i> and </i> art? As a creative being with no where to go, I
+                quickly became obsessed with layering images together and dissecting other people's CSS codes. This led
+                me to design guild layouts for my friends online after school, to nowadays helping small businesses
+                design package labels for their hopefully businesses!
+                <BR><BR>
+                My life led me in other directions, as I battled with the urge to be an artist and my mother's hopes of
+                me becoming a doctor. It wasn't until recent years that I decided to take a step towards actually pursuing
+                front-end development (I mean, c'mon, open wounds give me the ick!). And
+                now I am building my portfolio and taking into consideration how I can use my voice, art history, and dev-skills to
+                build things to sculpt with the internet.
+
+
+            </P>
+            <!-- <a href="#secrteme" class="btn">Read More</a> -->
+        </div>
+
+    </section>
+
+
+    <section class="services" id="services">
+        <h2 class="heading">
+           Your Idea <span>My Services</span> 
+        </h2>
+        <div class="services-container">
+            <div class="services-box">
+
+                <i class="bx bx-code-alt"></i>
+                <h3>Web Development</h3>
+                <p>
+                    I'm inspired by nature and blocks of color, just like Web Development. Creating a home-screen with comforting texts and sure personality are fun and game! Brand Identity plays a big role here, and I'd love to help start your mission 
+                    for a new great idea!<BR><BR>
+                 <small>  <a href="#contact">Contact ME!</a><BR></small>
+                      
+                        <a href="#webdev-2ndtext" class="btn">Read More</a>
+                
+                </p>
+
+                <section class="webdev-2ndtext" id="webdev-2ndtext">
+                    <!--TO DO make 2nd texts into divs-->
+                <BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
+               <p>  I am capable of merging the ability design flattering
+                websites with the skill to make them both functionable and responsive with my
+
+                Software Developer experience!
+                <BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
+               </P>
+                </section>
+            </div>
+
+            <div class="services-box">
+
+                <i class="bx bxs-paint"></i>
+                <h3>Graphic Design</h3>
+                <p>With over 15 years of Adobe Photoshop under my toolbelt and an obsession with the impact of design,
+                    I'm happy to work on
+                    from package/label design to editing product photos, and everything in-between!
+               
+                    Playing with mock templates and font declaration are like candy to me!
+                    <BR><small>:cupcake: </small>
+                </p>
+
+                <a href="#" class="btn">Read More</a>
+             
+            </div>
+
+
+            <div class="services-box">
+
+                <i class="bx bx-bar-chart-alt"></i>
+                <h3>API Integration</h3>
+                <p> What if I told you.. there are entire populations of people out there who have spent their time writing credible resources for people to pull from. The library is limitless, thanks to something called objects! 
+                </p></p>
+                
+                </p>
+                <BR><BR><BR><BR><BR><BR>
+                <a href="#api-2ndtext" class="btn">Read More</a>
 
 
 
-<input type="radio" id="image1" name="image" checked>
-<input type="radio" id="image2" name="image">
-<input type="radio" id="image3" name="image">
+                    <!--TO DO make 2nd texts into divs-->
 
-<div class="container">
-  <div class="featured-wrapper">
-    <ul class="featured-list">
-      <li>
-        <figure>
-          <img src="portfolioimages/LoginPage.png" alt=""><br>
-         
-          <a href="LoginPortal/index.html" class="portfolio-link"> </a>
-        </figure>
-      </li>
-      <li>
-        <figure>
-          <img src="portfolioimages/Food4Gardens.png" alt="">
-        </figure>
-      </li>
-      <li>
-        <figure>
-          <img src="portfolioimages/Calculator.png" alt="">
-        </figure>
-      </li>
-    </ul>
-    <ul class="arrows">
-      <li>
-        <label for="image1"></label>
-      </li>
-      <li>
-        <label for="image2"></label>
-      </li>
-      <li>
-        <label for="image3"></label>
-      </li>
-    </ul>
-    <ul class="dots">
-      <li>
-        <label for="image1"></label>
-      </li>
-      <li>
-        <label for="image2"></label>
-      </li>
-      <li>
-        <label for="image3"></label>
-      </li>
-    </ul>
-  </div>
-  <ul class="thumb-list">
-    <li>
-      <label for="image1" class="thumb-img">
-        <img src="portfolioimages/LoginPage.png" alt="">
-        <span class="outer">
-          <span class="inner"><A href="LoginPortal/index.html"> Link: Login Portal</a></span>
-        </span>
-      </label>
-    </li>
-    <li>
-      <label for="image2" class="thumb-img">
-        <img src="portfolioimages/Food4Gardens.png" alt="">
-        <span class="outer">
-          <span class="inner"><a href="FoodForGardens/index.html"> Link: Food For Gardens </a></span>
-        </span>
-      </label>
-    </li>
-    <li>
-      <label for="image3" class="thumb-img">
-        <img src="portfolioimages/Calculator.png" alt="">
-        <span class="outer">
-          <span class="inner"><a href="Calculator/index.html">Link:  Calculator</a></a></span>
-        </span>
-      </label>
-    </li>
-  </ul>
-</div>
+                <section class="api-2ndtext" id="api-2ndtext">
+                    <BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
+                      <p>  I love researching scientific material, and organizing bits of information into relational tables (or data)!
+                        We can combine the available knowledge of the internet with your idea. I use Spring frameworks and
+                        Java to connect the server/create client relationship with
+                        responsive endpoints: to utilize both databases and APIs!
+                        <BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
+                        </P>
+                         </section>   
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <section class="portfolio" id="portfolio">
+        <h2>Latest <span>Works</span></h2>
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="/WebsiteFront/Food4Gardens.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4><BR>
+                    <p> A small website scheme that works a reponsive nav-bar with imagery to promote a mock non-profit.
+
+                    </p>
+                    <a href="/FoodForGardens/index.html"><i class="bx bx-link-external">
+
+                        </i></a>
+                </div>
+            </div>
+
+
+            <div class="portfolio-box">
+                <img src="/WebsiteFront/LoginPage.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Follow this link to experience a login and registration page that utilizes a pop-up window with a
+                        functional close icon.
+
+                    </p>
+                    <a href="/LoginPortal/index.html"><i class="bx bx-link-external">
+
+                        </i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="/WebsiteFront/pixeldesktop.png"
+                    alt="">
+                <div class="portfolio-layer">
+                    <h4>Pixel Desktop</h4>
+                    <p>This personal project was an attempt to create a pixelated desktop inspired by the retro-days of early digital life. With a functioning clock, icons, and even a working pixelated Google screen, I'd say this tiny idea was a success!
+
+                    </p>
+                    <a href="https://coyo96.github.io/website/"><i class="bx bx-link-external">
+
+                        </i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="https://plus.unsplash.com/premium_photo-1673898654771-1b523c2d3016?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHBsYW50c3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60"
+                    alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste labore veritatis necessitatibus
+                        autem minima, magni porro temporibus dolorum nihil culpa
+                        fuga officia expedita, odit omnis aperiam molestias. Adipisci, quos cupiditate!
+
+                    </p>
+                    <a href="#"><i class="bx bx-link-external">
+
+                        </i></a>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <form action="#" placeholder="Full Name">
+            <div class="input-box">
+
+                <input type="text" placeholder="Full Name" required></input>
+                <input type="email" placeholder="E-mail Address" required></input>
+            </div>
+
+            <div class="input-box">
+                <input type="number" placeholder="Phone Number"></input>
+                <input type="text" placeholder="E-mail Subject"></input>
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+
+            <input type="submit" value="Send Message" class="btn">
+
+
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; Coyo Lam | All Rights Reserved</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href=""><i class="bx bx-up-arrow-alt"></i></a>
+        </div>
+    </footer>
+
+
+    <section class="services" id="services">
+        <div class="secre-me-container">
+            <h1 class="secre-me">
+            <secre-me-text>
+Rumor has it, I am actually really freaking cool. Hilarious, funny, and down-right witty.
+ Wondering what fun a little mayhem could be, I like to think of the World Wide web as an opportunity to have an opinion. 
+ 
+ Of course paired with silly rhymes. More of my history as an artist goes back down to my absolute Me. Being a child was my all time favorite part of being alive, 
+ growing up was not in my agenda, and I had no interest in changing that.
+ Extra hours after school, I would sit on my laptop and learn every feature that photoshop could. The Marquee tools and the blending modes were my <i>creme de la crem.</i>
+
+ Do I have any of these ancient codes I speak of? The visual blocks of color that I apparently thought to be oh-so-i-<i>cool</i>? No! <strike>Because my 
+ sacred petpages were <i>not</i> protected under Neopia's watch!</strike> Partly isso how cool can a middle school kid's prized virtual pet user-lookup be?
+ <small>For the record, the answer is very.</small>
+ <h3>
+    Well listen, the sparkly cursors and absolutely awesome animations are making a comeback. Media is about to be taken by storm, as soon as I get my hands on an entire team to work alongside
+    me creating something GREAT!
+
+ </h3> Leading a team is one of my strongsuits. I am great at recognizing what other qualities my co-team have, and pairing us up into dynamic duos that
+ work faster with glee!
+
+
+
+
+
+            </secre-me-text>
+            </h1>
+        </div>
+
+
+
+
+    <script src=""> </script>
 </body>
+
 </html>
-
-
-<footer class="page-footer">
-  <small>All Rights Reserved
-  </small>
-</footer>
