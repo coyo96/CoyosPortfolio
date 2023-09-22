@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&family=Mulish&display=swap');
+
+:root {
+	--primary: #5875be;
+	--business: #3A82EE;
+	--personal: #c72684;
+	--light: #e8d2c3;
+	--grey: #5d5d5d;
+	--dark: #313154;
+	--danger: #c2424f;
+	--h3: #e77c35;
+	--liBackground: #f6e1e94e;
+	--shadow: 0 1px 3px rgba(74, 101, 106, 0.502);
+
+	--business-glow: 0px 0px 4px rgba(58, 130, 238, 0.75);
+	--personal-glow: 0px 0px 4px #ea40a4bf;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Mulish'
+
+}
+
+input:not([type="radio"]):not([type="checkbox"]), button {
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+	cursor: initial;
+	font-family: 'Mooli', sans-serif;
+}
+main{
+	background-color: #fff;
+	padding: .5rem;
+	width: 70%;
+	border-radius: 30px;
+	position: absolute;
+	left: 40px;
+	top: 10px;
+
+}
+body {
+	/* background: var(--light); */
+	color: var(--dark);
+	background-image: url('https://images.unsplash.com/photo-1604079628040-94301bb21b91?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTM0fHxiYWNrZ3JvdW5kfGVufDB8fDB8fHww&auto=format&fit=crop&w=700&q=60');
+
+	background-size: cover;
+	
+}
+
+section {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	padding-left: 1.5rem;
+	padding-right: 1.5em;
+}
+
+h3 {
+	color: var(--h3);
+	font-size: 1rem;
+	font-weight: 400;
+	margin-bottom: .75rem;
+	font-family: 'Merriweather Sans', sans-serif;
+	
+}
+
+h4 {
+	color: var(--grey);
+	font-size: 0.875rem;
+	font-weight: 700;
+	margin-bottom: 0.5rem;
+	font-family: 'Mooli', sans-serif;
+}
+
+.greeting .title {
+	display: flex;
+}
+
+
+.greeting .title input {
+	margin-left: 0.5rem;
+	flex: 1 1 0%;
+	min-width: 0;
+}
+
+.greeting .title,
+.greeting .title input {
+	color: var(--dark);
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+.create-todo input[type="text"] {
+	display: block;
+	width: 100%;
+	font-size: 1.125rem;
+	padding: 1rem 1.5rem;
+	color: var(--dark);
+	background-color: #ffffff;
+	border-radius: 0.5rem;
+	box-shadow: var(--shadow);
+	margin-bottom: 1.5rem;
+}
+
+.create-todo .options {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 1rem;
+	margin-bottom: 1.5rem;
+}
+
+
+
+.create-todo .dateTime {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 1rem;
+	margin-bottom: 1.5rem;
+	
+
+}
+
+.create-todo .dueDate, .create-todo .time{
+	display: block;
+	width: 100%;
+	font-size: 2rem;
+	padding: 1rem 1.5rem;
+	color: var(--dark);
+	background-color: #FFF;
+	border-radius: 0.5rem;
+	box-shadow: var(--shadow);
+	margin-bottom: 1.5rem;
+	
+}
+.dueDate input, .time input{
+	font-size: 1.3rem;
+	color: var(--dark);
+	opacity: .65;
+	
+}
+.create-todo .options label {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 1.5rem;
+	background-color: #FFF;
+	border-radius: 0.5rem;
+	box-shadow: var(--shadow);
+	cursor: pointer;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+	display: none;
+	
+	
+}
+
+.bubble {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	border: 2px solid var(--business);
+	box-shadow: var(--business-glow);
+}
+
+.bubble.personal {
+	border-color: var(--personal);
+	box-shadow: var(--personal-glow);
+}
+
+.bubble::after {
+	content: "";
+	display: block;
+	opacity: 0;
+	width: 0px;
+	height: 0px;
+	background-color: var(--business);
+	box-shadow: var(--business-glow);
+	border-radius: 50%;
+	transition: 0.2s ease-in-out;
+}
+
+.bubble.personal::after {
+	background-color: var(--personal);
+	box-shadow: var(--personal-glow);
+}
+
+input:checked ~ .bubble::after {
+	width: 10px;
+	height: 10px;
+	opacity: 1;
+}
+
+.create-todo .options label div {
+	color: var(--dark);
+	font-size: 1.125rem;
+	margin-top: 1rem;
+}
+
+.create-todo input[type="submit"] {
+	display: block;
+	width: 100%;
+	font-size: 1.125rem;
+	padding: 1rem 1.5rem;
+	color: #FFF;
+	background-color: var(--primary);
+	border-radius: 0.5rem;
+	box-shadow: var(--dark);
+	cursor: pointer;
+	transition: 0.2s ease-in-out;
+}
+
+.create-todo input[type="submit"]:hover {
+	opacity: 0.75;
+}
+
+.todo-list .list {
+	margin: 1rem 0;
+} 
+.todo-content li{
+ list-style-type: none;
+}
+
+.todo-item .business{
+	color: var(--business);
+}
+
+.todo-item .personal{
+	color: var(--personal) ;
+}
+
+.todo-list .todo-item {
+	display: flex;
+	align-items: center;
+	padding: 1rem;
+	border-radius: 0.5rem;
+	box-shadow: var(--shadow);
+	margin-bottom: 1rem;
+}
+
+.todo-list .todo-item:nth-child(odd) {
+	background-color: var(--liBackground);
+
+}
+
+
+.todo-item label {
+	display: block;
+	margin-right: 1rem;
+	cursor: pointer;
+}
+
+.todo-item .todo-content {
+	flex: 1 1 0%;
+	color: #333;
+}
+
+.todo-item .todo-content .bold {
+	font-size: 1rem;
+	font-family: 'Mooli';
+	color: var(--h3);
+}
+
+.todo-item .todo-content input {
+	color: var(--dark);
+	font-size: 1.125rem;
+}
+
+.todo-item .actions {
+	display: flex;
+	align-items: center;
+}
+
+
+.todo-item .actions button {
+	display: block;
+	padding: 0.5rem;
+	border-radius: 0.25rem;
+	color: #FFF;
+	cursor: pointer;
+	transition: 0.2s ease-in-out;
+}
+
+.todo-item .actions button:hover {
+	opacity: 0.75;
+}
+
+.todo-item .actions .edit {
+	margin-right: 0.5rem;
+	background-color: var(--primary);
+}
+
+.todo-item .actions .delete {
+	background-color: var(--danger);
+	
+}
+
+.todo-item.done .todo-content input {
+	text-decoration: line-through;
+	color: var(--grey);
+}
